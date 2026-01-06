@@ -1,16 +1,4 @@
-Excellent — below is a **fully updated, polished, examiner-ready `README.md`** that:
 
-✅ Includes your **screenshots section (using renamed files)**
-✅ Clearly explains **Firebase + Blockchain**
-✅ Matches **Final Year Project (FYP)** expectations
-✅ Is **GitHub-professional + PDF-export friendly**
-✅ Uses your **actual project structure**
-
-You can **replace your entire README.md** with this.
-
----
-
-````md
 # 🗳️ Online Voting App – Student Council Elections  
 **Final Year Project (Flutter & Firebase)**
 
