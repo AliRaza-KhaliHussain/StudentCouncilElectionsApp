@@ -92,32 +92,102 @@ The system uses **Firebase (Auth, Firestore, Storage)** for a secure backend, **
 
 ---
 
-## 📁 Project Structure (Clean Architecture)
-
-The project follows **Clean Architecture + Feature-Based Structure** for scalability and maintainability.
-
-```text
+## 📁 Project Structure (Recommended) The project follows a **Clean Architecture + Feature-based structure**, ensuring scalability, testability, and maintainability.
+text
 lib/
 ├── core/
 │   ├── config/
+│   │   ├── firebase_config.dart        # Firebase initialization & setup
+│   │   ├── app_routes.dart             # Named route definitions
+│   │   └── app_theme.dart              # Global theme configuration
+│   │
 │   ├── constants/
+│   │   ├── app_colors.dart             # Color palette
+│   │   ├── app_strings.dart            # App text constants
+│   │   └── app_sizes.dart              # Spacing & sizing constants
+│   │
 │   ├── utils/
+│   │   ├── validators.dart             # Input validation helpers
+│   │   ├── date_utils.dart             # Date & time utilities
+│   │   └── blockchain_utils.dart       # Blockchain helper logic
+│   │
 │   └── widgets/
+│       ├── loading_widget.dart         # Global loading UI
+│       ├── error_widget.dart           # Error handling UI
+│       └── empty_state_widget.dart     # Empty state UI
 │
 ├── features/
 │   ├── auth/
+│   │   ├── data/
+│   │   │   ├── auth_service.dart
+│   │   │   └── auth_repository.dart
+│   │   ├── models/
+│   │   │   └── user_model.dart
+│   │   ├── viewmodels/
+│   │   │   └── auth_viewmodel.dart
+│   │   └── views/
+│   │       ├── login_screen.dart
+│   │       ├── register_screen.dart
+│   │       └── widgets/
+│   │           └── auth_form.dart
+│
 │   ├── election/
+│   │   ├── data/
+│   │   │   ├── election_service.dart
+│   │   │   └── election_repository.dart
+│   │   ├── models/
+│   │   │   ├── election_model.dart
+│   │   │   ├── candidate_model.dart
+│   │   │   └── vote_model.dart
+│   │   ├── viewmodels/
+│   │   │   ├── election_viewmodel.dart
+│   │   │   └── results_viewmodel.dart
+│   │   └── views/
+│   │       ├── election_list_screen.dart
+│   │       ├── election_detail_screen.dart
+│   │       ├── vote_screen.dart
+│   │       └── widgets/
+│   │           ├── candidate_card.dart
+│   │           └── vote_button.dart
+│
 │   ├── blockchain/
-│   └── admin/
+│   │   ├── data/
+│   │   │   └── blockchain_service.dart
+│   │   ├── models/
+│   │   │   └── block_model.dart
+│   │   ├── viewmodels/
+│   │   │   └── blockchain_viewmodel.dart
+│   │   └── views/
+│   │       └── blockchain_logs_screen.dart
+│
+│   ├── admin/
+│   │   ├── data/
+│   │   │   └── admin_service.dart
+│   │   ├── viewmodels/
+│   │   │   └── admin_viewmodel.dart
+│   │   └── views/
+│   │       ├── admin_dashboard_screen.dart
+│   │       └── manage_elections_screen.dart
 │
 ├── shared/
 │   ├── widgets/
+│   │   ├── app_button.dart
+│   │   ├── app_textfield.dart
+│   │   └── app_card.dart
+│   │
 │   └── providers/
+│       └── app_providers.dart
 │
 ├── firebase_options.dart
 ├── main.dart
 └── app.dart
-````
+
+
+## 📜 Notes
+
+* ✅ Only the **dummy Firebase config** is committed.
+* ✅ Do **not commit** `google-services.json` or `GoogleService-Info.plist`.
+* ✅ Contributors must set up their own Firebase project.
 
 ---
 
