@@ -182,6 +182,7 @@ lib/
 ├── main.dart
 └── app.dart
 
+---
 
 ## 📜 Notes
 
