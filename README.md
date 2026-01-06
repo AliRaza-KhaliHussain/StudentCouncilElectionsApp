@@ -1,5 +1,5 @@
 
-# 🗳️ Online Voting App – Student Council Elections  
+# 🗳️ Online Voting App – Student Council Elections / Online Secure Voting Flutter App Using Firebase(Auth,firestore) Private Blockchain  
 **Final Year Project (Flutter & Firebase)**
 
 A secure, transparent, and cross-platform **Online Voting Application** built using **Flutter & Dart**, designed primarily for **Student Council Elections**.  
