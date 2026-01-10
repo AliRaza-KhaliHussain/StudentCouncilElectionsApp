@@ -1,3 +1,4 @@
+
 // lib/firebase_options.dart
 // File generated manually for safe GitHub upload.
 // ignore_for_file: type=lint
