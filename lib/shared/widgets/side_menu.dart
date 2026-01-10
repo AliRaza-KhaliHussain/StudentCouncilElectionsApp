@@ -5,11 +5,12 @@ import '../../features/admin/views/admin_candidate_applications_screen.dart';
 import '../../features/admin/views/admin_registration_application_screen.dart';
 import '../../features/blockchain/views/blockchain_logs_screen.dart';
 import '../../features/election/views/voter_dashboard_screen.dart';
-import '../../app.dart';
+import '../../app/app.dart';
 import '../../features/admin/views/admin_register_user_screen.dart';
 import '../../features/election/views/all_results_screen.dart';
 import '../../features/admin/views/election_management_screen.dart';
 import '../../features/admin/views/feedback_reports_screen.dart';
+import '../../screens/main_screen.dart';
 import '../views/profile_screen.dart';
 import '../../shared/views/settings_screen.dart';
 
