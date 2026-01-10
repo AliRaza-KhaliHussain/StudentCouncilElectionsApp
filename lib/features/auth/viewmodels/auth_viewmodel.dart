@@ -3,7 +3,8 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import '../../../core/utils/input_validators.dart';
-import '../../../app.dart';
+import '../../../app/app.dart';
+import '../../../screens/main_screen.dart';
 import '../../election/views/voter_dashboard_screen.dart';
 
 class LoginViewModel extends ChangeNotifier {
